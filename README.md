@@ -375,7 +375,44 @@ Good day Emmanuel! It's not 12:57EAT on this lovely day of July 20. 1:00
 or 'Good morning" in the morning hours, or "Good evening" in the evening hours, depending on the current time.
 Of course there will be at least an if or a case construct in your script.
 ```
+```
+echo "What is your name?"
 
+read name
+
+
+h=`date +%H`
+
+if [ $h -lt 12 ]; then
+
+    echo "Good morning $name"
+
+elif [ $h -lt 18 ]; then
+
+    echo "Good afternoon $name"
+
+else
+
+   echo "Good evening $name"
+
+fi
+
+
+current_time=`date +%T`
+current_date=`date +%Y-%m-%d`
+
+
+echo "It is now $current_time in the lovely day of $current_date"
+
+```
+calling the  nano script in bash will generate the output below 
+
+__output__
+```What is your name? <type in name>
+Mark
+Good afternoon Mark
+It is now 12:58:08 in the lovely day of 2022-07-26
+```
 ### Question 20
 Suppose your current working directory is /home/icipe/Linux/Exercises/. What is the command that will enable to move to /home/icipe/Fun_stuff/?
 
