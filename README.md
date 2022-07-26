@@ -23,7 +23,14 @@ system='uptime'
   echo logged in users: $users
   echo system uptime: $system
 ```
-
+__output__
+```
+Tue 26 Jul 2022 11:10:06 AM EAT
+icipe    :0           2022-07-26 08:06 (:0)
+date and time:
+logged in users:
+system uptime: uptime
+```
 ### Question 3
 Which command would you use in order to create an empty file in the current directory, let's say empty.txt?
 
@@ -47,14 +54,40 @@ __output__
 You are in /home/icipe/  suppose this directory is empty. How do you create in only one command the whole path /home/icipe/Work/mini-project/RNA-Seq/?
 
 ```bash
-mkdir -p mkdir -p home/icipe/Work/mini-project/RNA-Seq/
+mkdir -p home/icipe/Work/mini-project/RNA-Seq/
 ```
+__output__
+```
+ 2014-01-31_JA-africa.tsv    date.sh     '[file]'       jiy          Pictures                trial-11.data   trial-1.data    trial-9.data
+ 2014-01-31_JA-america.tsv   Desktop      firstdir      less         R                       trial-12.data   trial-20.data  'universal greetings.txt'
+ 2014-01_JA.tsv              diary.html   for           __MACOSX     seq.txt                 trial-13.data   trial-2.data    universal_greetings.txt
+ 2014-02-02_JA-britain.tsv   do           gulliber     'man ls'      shell-lesson-data       trial-14.data   trial-3.data    Videos
+ 201403160_01_text.json      Documents    hello-world   miniconda3   shell-lesson-data.zip   trial-15.data   trial-4.data
+ 33504-0.txt                 Downloads    home          mkdir        shell-lesson.zip        trial-16.data   trial-5.data
+ 829-0.txt                   dt.sh        jimmy         Music        snap                    trial-17.data   trial-6.data
+ anaconda3                   empty.txt    Jimmy         output.txt  'test.fa?raw=T'          trial-18.data   trial-7.data
+ bin                         error.txt    jimy          pg514.txt    trial-10.data           trial-19.data   trial-8.data
+```
+
 ### Question 5
 Suppose your current working directory contains a file named seqs.txt. How do you rename this file into sequences.fasta? 
 Does this have any effect on the content of the file, and if yes, what does it do?
 
 ```bash 
 mv seq.txt sequence.fasta
+```
+
+__0utput__
+```
+ 2014-01-31_JA-africa.tsv    date.sh     '[file]'       jiy          Pictures                trial-11.data   trial-1.data    trial-9.data
+ 2014-01-31_JA-america.tsv   Desktop      firstdir      less         R                       trial-12.data   trial-20.data  'universal greetings.txt'
+ 2014-01_JA.tsv              diary.html   for           __MACOSX     sequence.fasta          trial-13.data   trial-2.data    universal_greetings.txt
+ 2014-02-02_JA-britain.tsv   do           gulliber     'man ls'      shell-lesson-data       trial-14.data   trial-3.data    Videos
+ 201403160_01_text.json      Documents    hello-world   miniconda3   shell-lesson-data.zip   trial-15.data   trial-4.data
+ 33504-0.txt                 Downloads    home          mkdir        shell-lesson.zip        trial-16.data   trial-5.data
+ 829-0.txt                   dt.sh        jimmy         Music        snap                    trial-17.data   trial-6.data
+ anaconda3                   empty.txt    Jimmy         output.txt  'test.fa?raw=T'          trial-18.data   trial-7.data
+ bin                         error.txt    jimy          pg514.txt    trial-10.data           trial-19.data   trial-8.data
 ```
 
 ### Question 6
