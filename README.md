@@ -6,6 +6,10 @@ How many processes are currently running on your system? Use ps and wc, the firs
 ```bash
 ps -e | wc -l
 ```
+__output__
+```
+236
+```
 
 ### Question 2
 Write a script that upon invocation shows the time and date, lists all logged-in users, and gives the system uptime. 
@@ -19,6 +23,14 @@ system='uptime'
   echo logged in users: $users
   echo system uptime: $system
 ```
+__output__
+```
+Tue 26 Jul 2022 11:10:06 AM EAT
+icipe    :0           2022-07-26 08:06 (:0)
+date and time:
+logged in users:
+system uptime: uptime
+```
    
 ### Question 3
 Which command would you use in order to create an empty file in the current directory, let's say empty.txt?
@@ -26,6 +38,16 @@ Which command would you use in order to create an empty file in the current dire
 ```bash
 touch empty.txt
 ```
+```2014-01-31_JA-africa.tsv    201403160_01_text.json   bin          do         '[file]'    hello-world   jiy          mkdir       R                       snap
+ 2014-01-31_JA-america.tsv   33504-0.txt              date.sh      Documents   firstdir   jimmy         __MACOSX     Music       shell-lesson-data       Videos
+ 2014-01_JA.tsv              829-0.txt                Desktop      Downloads   for        Jimmy        'man ls'      pg514.txt   shell-lesson-data.zip
+ 2014-02-02_JA-britain.tsv   anaconda3                diary.html   empty.txt   gulliber   jimy          miniconda3   Pictures    shell-lesson.zip
+
+2014-01-31_JA-africa.tsv    201403160_01_text.json   bin          do         '[file]'    hello-world   jiy          mkdir       R                       snap
+ 2014-01-31_JA-america.tsv   33504-0.txt              date.sh      Documents   firstdir   jimmy         __MACOSX     Music       shell-lesson-data       Videos
+ 2014-01_JA.tsv              829-0.txt                Desktop      Downloads   for        Jimmy        'man ls'      pg514.txt   shell-lesson-data.zip
+ 2014-02-02_JA-britain.tsv   anaconda3                diary.html   empty.txt   gulliber   jimy          miniconda3   Pictures    shell-lesson.zip
+ ```
 
 ### Question 4
 You are in /home/icipe/  suppose this directory is empty. How do you create in only one command the whole path /home/icipe/Work/mini-project/RNA-Seq/?
