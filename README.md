@@ -31,7 +31,7 @@ touch empty.txt
 You are in /home/icipe/  suppose this directory is empty. How do you create in only one command the whole path /home/icipe/Work/mini-project/RNA-Seq/?
 
 ```bash
-mkdir -p mkdir -p home/icipe/Work/mini-project/RNA-Seq/
+mkdir -p home/icipe/Work/mini-project/RNA-Seq/
 ```
 ### Question 5
 Suppose your current working directory contains a file named seqs.txt. How do you rename this file into sequences.fasta? 
