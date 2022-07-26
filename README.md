@@ -125,6 +125,11 @@ Of course, don't issue 20 commands, but just one.
 ```bash
 touch trial-{1..20}.data
 ```
+or
+```
+touch $(seq -f "trial%g" 1 20) ; for f in trial* ; do mv "$f" $f.data ; done
+
+```
 
 ### Question 17
 Try this with the command "expr 1 / 0", whose purpose is to calculate the integer result of 1 divided by 0. What happens? Why?
