@@ -22,6 +22,9 @@ system='uptime'
   echo date and time: $datetime
   echo logged in users: $users
   echo system uptime: $system
+  
+```bash
+bash datetime.sh> date.log
 ```
 __output__
 ```
@@ -161,15 +164,18 @@ __output__
 Extract only the identifier lines from this file, and write them into a file called "identifiers.txt".
 
 ```bash
-grep -w ">*" test.fa\?raw\=T identifier.txt
+grep -w ">*" test.fa\?raw\=true > identifiers.txt
 ```
 __output__
 ```
-test.fa?raw=T:>NM_001361694.1 Mus musculus nuclear respiratory factor 1 (Nrf1), transcript variant 9, mRNA
-test.fa?raw=T:>NM_001361695.1 Mus musculus nuclear respiratory factor 1 (Nrf1), transcript variant 10, mRNA
-test.fa?raw=T:>NM_001164226.1 Mus musculus nuclear respiratory factor 1 (Nrf1), transcript variant 1, mRNA
-test.fa?raw=T:>NM_010938.4 Mus musculus nuclear respiratory factor 1 (Nrf1), transcript variant 6, mRNA
-test.fa?raw=T:>AK082580.1 Mus musculus 0 day neonate cerebellum cDNA, RIKEN full-length enriched library, clone:C230066G05 product:nuclear respiratory factor 1, full insert sequence
+>NM_001361694.1 Mus musculus nuclear respiratory factor 1 (Nrf1), transcript variant 9, mRNA
+>NM_001361695.1 Mus musculus nuclear respiratory factor 1 (Nrf1), transcript variant 10, mRNA
+>NM_001164226.1 Mus musculus nuclear respiratory factor 1 (Nrf1), transcript variant 1, mRNA
+>NM_010938.4 Mus musculus nuclear respiratory factor 1 (Nrf1), transcript variant 6, mRNA
+>AK082580.1 Mus musculus 0 day neonate cerebellum cDNA, RIKEN full-length enriched library, clone:C230066G05 product:nuclear respiratory factor 1, full insert sequence
+>XM_021165121.1 PREDICTED: Mus caroli nuclear respiratory factor 1 (Nrf1), transcript variant X5, mRNA
+>XM_021165122.1 PREDICTED: Mus caroli nuclear respiratory factor 1 (Nrf1), transcript variant X6, mRNA
+
 ```
 
 ### Question 11
@@ -262,9 +268,7 @@ __output__
 Write a loop in Bash producing all the integers from 1 to 30, one per line?
 
 ```bash
-for numbers in 1 30 ; 
-do
-seq $numbers; done
+$ for numbers in 1 30 ; do seq $numbers ; done
 
 ```
 __output__
@@ -342,7 +346,7 @@ Try this with the command "expr 1 / 0", whose purpose is to calculate the intege
 ```output
 expr: division by zero
 ```
-this is a command for division
+this is a command for division any number divided by 0 gives a syntax error.
 
 ### Question 18
 How can you separately redirect the standard output and the standard error streams into two separate files?
@@ -351,13 +355,6 @@ How can you separately redirect the standard output and the standard error strea
 cat seqdump.txt > output.txt 2>error.txt 
 ```
 
-__ouptput__
-```
-Command 'catt' not found, did you mean:
-
-  command 'ratt' from deb ratt (0.0~git20180127.c44413c-2)
-  command 'catty' from deb node-catty (0.0.8-1)
-  command 'cat' from deb coreutils (8.30-3ubuntu2)
 
 Try: sudo apt install <deb name>
 ```
